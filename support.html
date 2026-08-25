@@ -11,21 +11,34 @@
     <section class="card">
       <p class="eyebrow">Support</p>
       <h1>My App Support</h1>
-      <p class="lead">We’re here to help with questions, feedback, or issues.</p>
+      <p class="lead">Use the form below for questions, feedback, or support issues.</p>
 
-      <h2>Contact</h2>
-      <p>Email support at:</p>
-      <p><a class="email" href="mailto:benderclaw01@gmail.com?subject=My%20App%20Support">benderclaw01@gmail.com</a></p>
+      <form class="support-form" action="https://formsubmit.co/brett.tucker@me.com" method="POST">
+        <input type="hidden" name="_subject" value="My App Support Request" />
+        <input type="hidden" name="_template" value="table" />
+        <input type="hidden" name="_captcha" value="false" />
+        <input type="hidden" name="_next" value="https://btu00.github.io/my-app-support/thanks.html" />
 
-      <h2>What to include</h2>
-      <ul>
-        <li>Your device model</li>
-        <li>Your iOS version</li>
-        <li>The app version, if available</li>
-        <li>A short description of the problem</li>
-      </ul>
+        <label for="name">Name</label>
+        <input id="name" name="name" type="text" autocomplete="name" required />
 
-      <p class="note">This site is hosted on GitHub Pages. For now, support requests are handled by email.</p>
+        <label for="email">Email</label>
+        <input id="email" name="email" type="email" autocomplete="email" required />
+
+        <label for="device">Device / iOS version</label>
+        <input id="device" name="device" type="text" placeholder="e.g. iPhone 15, iOS 18" />
+
+        <label for="message">How can we help?</label>
+        <textarea id="message" name="message" rows="7" required></textarea>
+
+        <button class="button" type="submit">Send Support Request</button>
+      </form>
+
+      <h2>Email instead</h2>
+      <p>You can also email support directly:</p>
+      <p><a class="email" href="mailto:brett.tucker@me.com?subject=My%20App%20Support">brett.tucker@me.com</a></p>
+
+      <p class="note">The contact form is powered by FormSubmit. The first form submission may require email activation before messages are delivered.</p>
       <p><a href="index.html">Back to home</a></p>
     </section>
   </main>
