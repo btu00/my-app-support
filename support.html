@@ -3,21 +3,28 @@
 <head>
   <meta charset="UTF-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-  <title>Support - My App</title>
+  <title>Support - Apps by Brett</title>
   <link rel="stylesheet" href="styles.css" />
 </head>
 <body>
   <main class="container">
     <section class="card">
       <p class="eyebrow">Support</p>
-      <h1>My App Support</h1>
-      <p class="lead">Use the form below for questions, feedback, or support issues.</p>
+      <h1>App Support</h1>
+      <p class="lead">Select the app you need help with, then send your question, feedback, or support issue.</p>
 
       <form class="support-form" action="https://formsubmit.co/benderclaw01@gmail.com" method="POST">
-        <input type="hidden" name="_subject" value="My App Support Request" />
+        <input type="hidden" name="_subject" value="App Support Request" />
         <input type="hidden" name="_template" value="table" />
         <input type="hidden" name="_captcha" value="false" />
         <input type="hidden" name="_next" value="https://btu00.github.io/my-app-support/thanks.html" />
+
+        <label for="app">App</label>
+        <select id="app" name="app" required>
+          <option value="" selected disabled>Select an app</option>
+          <option value="DesertGecko">DesertGecko</option>
+          <option value="ReptileRecord">ReptileRecord</option>
+        </select>
 
         <label for="name">Name</label>
         <input id="name" name="name" type="text" autocomplete="name" required />

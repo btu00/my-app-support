@@ -81,6 +81,7 @@ a { color: var(--accent); }
 }
 
 .support-form input,
+.support-form select,
 .support-form textarea {
   width: 100%;
   padding: 12px 14px;
@@ -89,6 +90,10 @@ a { color: var(--accent); }
   background: rgba(255,255,255,0.08);
   color: var(--text);
   font: inherit;
+}
+
+.support-form select option {
+  color: #0f172a;
 }
 
 .support-form input::placeholder,
