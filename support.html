@@ -22,6 +22,7 @@
         <label for="app">App</label>
         <select id="app" name="app" required>
           <option value="" selected disabled>Select an app</option>
+          <option value="MapPlot">MapPlot</option>
           <option value="DesertGecko">DesertGecko</option>
           <option value="ReptileRecord">ReptileRecord</option>
         </select>
@@ -45,5 +46,9 @@
       <p><a href="index.html">Back to home</a></p>
     </section>
   </main>
+  <script>
+    const app = new URLSearchParams(window.location.search).get("app");
+    if (app) document.getElementById("app").value = app;
+  </script>
 </body>
 </html>
