@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Contact MapPlot Support</title>
+  <link rel="stylesheet" href="styles.css" />
+</head>
+<body>
+  <main class="container">
+    <section class="card hero">
+      <p class="eyebrow">MapPlot Support</p>
+      <h1>Contact MapPlot Support</h1>
+      <p class="lead">Tell us what happened and include the sounder and Mac details so we can investigate accurately.</p>
+    </section>
+
+    <section class="card">
+      <form class="support-form" action="https://formsubmit.co/benderclaw01@gmail.com" method="POST">
+        <input type="hidden" name="_subject" value="MapPlot support request" />
+        <input type="hidden" name="_template" value="table" />
+        <input type="hidden" name="_captcha" value="false" />
+        <input type="hidden" name="_next" value="https://btu00.github.io/my-app-support/thanks.html" />
+        <input type="hidden" name="app" value="MapPlot" />
+
+        <label for="name">Name</label>
+        <input id="name" name="name" type="text" autocomplete="name" required />
+
+        <label for="email">Email address</label>
+        <input id="email" name="email" type="email" autocomplete="email" required />
+
+        <label for="macos_version">macOS version</label>
+        <input id="macos_version" name="macos_version" type="text" placeholder="e.g. macOS Sequoia 15.6" required />
+
+        <label for="mapplot_version">MapPlot version</label>
+        <input id="mapplot_version" name="mapplot_version" type="text" placeholder="If known" />
+
+        <label for="sounder_model">Sounder hardware model</label>
+        <input id="sounder_model" name="sounder_model" type="text" placeholder="e.g. HDS Live-12" />
+
+        <label for="sounder_software_version">Sounder software version</label>
+        <input id="sounder_software_version" name="sounder_software_version" type="text" placeholder="If known" />
+
+        <label for="message">Question, comment or concern</label>
+        <textarea id="message" name="message" rows="9" required placeholder="Describe what happened, what you expected, and any steps that reproduce the problem."></textarea>
+
+        <button type="submit">Send MapPlot Support Request</button>
+      </form>
+      <p class="note">Please do not include passwords, network credentials, or other sensitive information.</p>
+      <p><a href="mapplot-support.html">Back to MapPlot Support</a></p>
+    </section>
+  </main>
+</body>
+</html>
